@@ -1,8 +1,14 @@
 ﻿Console.Clear();
 
-int n = new Random().Next(100, 1000); // перечень чисел от 10 до 100 не включительно 
+int n = new Random().Next(100, 999); // перечень чисел от 100 до 999 не включительно 
 Console.Write($"случайное число: {n}");
-int n1 = n / 100; //количество сотен
-int n3 = n % 10; //количество единиц (последняя цифра числа) 
+(
+if 
+int n = new Random().Next(100, 999);
+Console.Write("yes");
 
- Console.Write(n1 * 10 + n3);
+else 
+int n = new Random().Next(1, 99);
+Console.Write("третьей цифры нет");
+
+)
