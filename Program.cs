@@ -4,4 +4,12 @@ int n = new Random().Next(10, 999);
 Console.Write($"трехзначное число: {n} ");
 int n1 = n / 1; 
 int n3 = n1 % 10; 
-Console.WriteLine($"третье число: {n3}");
+if (n < 100)
+Console.WriteLine($"третьего числа нет");
+else
+{
+    while (n > 1000)
+    n1 = n / 1; 
+    n3 = n1 % 10;
+    Console.Write($"трехзначное число: {n3} ");
+}
