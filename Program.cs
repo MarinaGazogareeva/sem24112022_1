@@ -1,15 +1,13 @@
 ﻿// Задача 13: Напишите программу, которая выводит третью цифру(c начала) заданного числа или сообщает, что третьей цифры нет.
 Console.Clear();
-int n = new Random().Next(10, 999); 
-Console.Write($"трехзначное число: {n} ");
-int n1 = n / 1; 
-int n3 = n1 % 10; 
+Console.Write("Введите число: ");
+int n = Convert.ToInt32(Console.ReadLine()); 
 if (n < 100)
-Console.WriteLine($"третьего числа нет");
+Console.WriteLine("третьего числа нет");
 else
 {
-    while (n > 1000)
-    n1 = n / 1; 
-    n3 = n1 % 10;
-    Console.Write($"трехзначное число: {n3} ");
+    while (n > 100)
+    n = n / 10; 
+    
+    Console.WriteLine(n);
 }
